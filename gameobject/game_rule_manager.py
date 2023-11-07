@@ -231,7 +231,6 @@ class GameRuleManager:
             rook.init(ChessPosition(i, 0))
             self.__chess_list.append(rook)
 
-
     def level5(self):
         from gameobject.chess.player import Player
         from gameobject.chess.chess_piece import ChessPiece, Type
@@ -269,7 +268,7 @@ class GameRuleManager:
             bishop.init(ChessPosition(i, 0))
             self.__chess_list.append(bishop)
 
-    def level_init(self, n: int()):
+    def level_init(self, n: int):
         self.__chess_list.clear()
         if n == 1:
             self.level1()
@@ -283,6 +282,6 @@ class GameRuleManager:
             self.level5()
         self.current_level = n
 
-    def get_chess_list(self, level: int()) -> list[ChessPiece]:
+    def get_chess_list(self, level: int) -> list[ChessPiece]:
         self.level_init(level)
         return self.__chess_list

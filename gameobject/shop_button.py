@@ -36,6 +36,7 @@ class ShopButton:
         font_price = DATA.get_font("Silver", 38)
         self.lbl_price.color = (56, 52, 80)
         self.lbl_price.set_font(font_price)
+        self.set_price(price)
 
     def update(self, delta_time: float):
         new_title = self.name + ": " + str(self.btn_get_value())

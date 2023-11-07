@@ -60,7 +60,7 @@ class Machine(metaclass=Singleton):
 
     @property
     def turn_count(self):
-        return self.turn_count
+        return self.__turn_count
 
     @property
     def need_to_change_turn(self):
