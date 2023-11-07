@@ -38,7 +38,6 @@ class ChessPiece(Sprite):
         self.__current_pos = None
         self.__dest_pos = None
         self.__shoot_pos = None
-        # self.__color = None
         self.is_end_turn = False
         self.__current_time = 0
         self.__is_promotion = False
